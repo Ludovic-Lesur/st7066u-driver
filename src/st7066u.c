@@ -96,17 +96,17 @@ errors:
 /*******************************************************************/
 ST7066U_status_t ST7066U_de_init(void) {
     // Local variables.
-   ST7066U_status_t status = ST7066U_SUCCESS;
-   // Put all GPIOs in output low.
-   status = ST7066U_HW_gpio_write(ST7066U_HW_GPIO_RS, 0);
-   if (status != ST7066U_SUCCESS) goto errors;
-   status = ST7066U_HW_gpio_write(ST7066U_HW_GPIO_RW, 0);
-   if (status != ST7066U_SUCCESS) goto errors;
-   status = ST7066U_HW_gpio_write(ST7066U_HW_GPIO_E, 0);
-   if (status != ST7066U_SUCCESS) goto errors;
-   // Release hardware interface.
-   status = ST7066U_HW_de_init();
-   if (status != ST7066U_SUCCESS) goto errors;
+    ST7066U_status_t status = ST7066U_SUCCESS;
+    // Put all GPIOs in output low.
+    status = ST7066U_HW_gpio_write(ST7066U_HW_GPIO_RS, 0);
+    if (status != ST7066U_SUCCESS) goto errors;
+    status = ST7066U_HW_gpio_write(ST7066U_HW_GPIO_RW, 0);
+    if (status != ST7066U_SUCCESS) goto errors;
+    status = ST7066U_HW_gpio_write(ST7066U_HW_GPIO_E, 0);
+    if (status != ST7066U_SUCCESS) goto errors;
+    // Release hardware interface.
+    status = ST7066U_HW_de_init();
+    if (status != ST7066U_SUCCESS) goto errors;
 errors:
     return status;
 }
