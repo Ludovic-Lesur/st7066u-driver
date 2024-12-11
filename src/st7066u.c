@@ -144,12 +144,12 @@ ST7066U_status_t ST7066U_print_string(uint8_t row, uint8_t column, char_t* str) 
         goto errors;
     }
     // Set position.
-    status = _ST7066U_write(ST7066U_ACCESS_TYPE_COMMAND, (((row * 0x40) + column) + 0x80));
+    status = _ST7066U_write(ST7066U_ACCESS_TYPE_COMMAND, (uint8_t) (((row * 0x40) + column) + 0x80));
     if (status != ST7066U_SUCCESS) goto errors;
     // Loop until string is printed or screen edge is reached.
     while ((column_idx < ST7066U_DRIVER_SCREEN_WIDTH) && (str[char_idx] != STRING_CHAR_NULL)) {
         // Write character.
-        status = _ST7066U_write(ST7066U_ACCESS_TYPE_DATA, str[char_idx]);
+        status = _ST7066U_write(ST7066U_ACCESS_TYPE_DATA, (uint8_t) (str[char_idx]));
         if (status != ST7066U_SUCCESS) goto errors;
         // Increment indexes.
         char_idx++;

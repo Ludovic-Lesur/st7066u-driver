@@ -75,7 +75,7 @@ ST7066U_status_t ST7066U_HW_gpio_make_pulse(ST7066_HW_gpio_t gpio, uint32_t puls
 ST7066U_status_t ST7066U_HW_data_bus_write(uint8_t data_bus_byte);
 
 /*!******************************************************************
- * \fn ST7066U_status_t ST7066_HW_delay_milliseconds(uint32_t delay_ms)
+ * \fn ST7066U_status_t ST7066U_HW_delay_milliseconds(uint32_t delay_ms)
  * \brief Delay function.
  * \param[in]   delay_ms: Delay to wait in ms.
  * \param[out]  none
