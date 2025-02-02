@@ -11,7 +11,7 @@
 #include "st7066u_driver_flags.h"
 #endif
 #include "st7066u_hw.h"
-#include "string.h"
+#include "strings.h"
 #include "types.h"
 
 #ifndef ST7066U_DRIVER_DISABLE
