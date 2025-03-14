@@ -11,6 +11,7 @@
 #ifndef ST7066U_DRIVER_DISABLE_FLAGS_FILE
 #include "st7066u_driver_flags.h"
 #endif
+#include "error.h"
 #include "types.h"
 
 /*** ST7066U structures ***/
@@ -26,7 +27,7 @@ typedef enum {
     ST7066U_ERROR_ROW_OVERFLOW,
     ST7066U_ERROR_COLUMN_OVERFLOW,
     // Low level drivers errors.
-    ST7066U_ERROR_BASE_GPIO = 0x0100,
+    ST7066U_ERROR_BASE_GPIO = ERROR_BASE_STEP,
     ST7066U_ERROR_BASE_DELAY = (ST7066U_ERROR_BASE_GPIO + ST7066U_DRIVER_GPIO_ERROR_BASE_LAST),
     // Last base value.
     ST7066U_ERROR_BASE_LAST = (ST7066U_ERROR_BASE_DELAY + ST7066U_DRIVER_DELAY_ERROR_BASE_LAST)
