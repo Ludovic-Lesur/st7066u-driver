@@ -13,6 +13,7 @@ Here is the versions compatibility table:
 
 | **st7066u-driver** | **embedded-utils** |
 |:---:|:---:|
+| [sw1.6](https://github.com/Ludovic-Lesur/st7066u-driver/releases/tag/sw1.6) | >= [sw7.0](https://github.com/Ludovic-Lesur/embedded-utils/releases/tag/sw7.0) |
 | [sw1.5](https://github.com/Ludovic-Lesur/st7066u-driver/releases/tag/sw1.5) | >= [sw7.0](https://github.com/Ludovic-Lesur/embedded-utils/releases/tag/sw7.0) |
 | [sw1.4](https://github.com/Ludovic-Lesur/st7066u-driver/releases/tag/sw1.4) | >= [sw7.0](https://github.com/Ludovic-Lesur/embedded-utils/releases/tag/sw7.0) |
 | [sw1.3](https://github.com/Ludovic-Lesur/st7066u-driver/releases/tag/sw1.3) | >= [sw7.0](https://github.com/Ludovic-Lesur/embedded-utils/releases/tag/sw7.0) |
