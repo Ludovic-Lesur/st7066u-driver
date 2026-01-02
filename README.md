@@ -30,3 +30,22 @@ Here is the versions compatibility table:
 | `ST7066U_DRIVER_DELAY_ERROR_BASE_LAST` | `<value>` | Last error base of the low level delay driver. |
 | `ST7066U_DRIVER_SCREEN_WIDTH` | `<value>` | LCD screen width (number of characters per row). |
 | `ST7066U_DRIVER_SCREEN_HEIGHT` | `1` / `2` | LCD screen height (number of rows). |
+
+# Build
+
+A static library can be compiled by command line with `cmake`.
+
+```bash
+mkdir build
+cd build
+cmake -DCMAKE_TOOLCHAIN_FILE="<toolchain_file_path>" \
+      -DTOOLCHAIN_PATH="<arm-none-eabi-gcc_path>" \
+      -DTYPES_PATH="<types_file_path>" \
+      -DEMBEDDED_UTILS_PATH="<embedded-utils_path>" \
+      -DST7066U_DRIVER_GPIO_ERROR_BASE_LAST=0 \
+      -DST7066U_DRIVER_DELAY_ERROR_BASE_LAST=0 \
+      -DST7066U_DRIVER_SCREEN_WIDTH=8 \
+      -DST7066U_DRIVER_SCREEN_HEIGHT=2 \
+      -G "Unix Makefiles" ..
+make all
+```

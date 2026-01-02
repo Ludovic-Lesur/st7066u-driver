@@ -1,0 +1,19 @@
+/*
+ * st7066u_driver_flags.h
+ *
+ *  Created on: 11 oct. 2024
+ *      Author: Ludo
+ */
+
+#ifndef __ST7066U_DRIVER_FLAGS_H__
+#define __ST7066U_DRIVER_FLAGS_H__
+
+/*** ST7066U driver compilation flags ***/
+
+#cmakedefine ST7066U_DRIVER_GPIO_ERROR_BASE_LAST    @ST7066U_DRIVER_GPIO_ERROR_BASE_LAST@
+#cmakedefine ST7066U_DRIVER_DELAY_ERROR_BASE_LAST   @ST7066U_DRIVER_DELAY_ERROR_BASE_LAST@
+
+#cmakedefine ST7066U_DRIVER_SCREEN_WIDTH            @ST7066U_DRIVER_SCREEN_WIDTH@
+#cmakedefine ST7066U_DRIVER_SCREEN_HEIGHT           @ST7066U_DRIVER_SCREEN_HEIGHT@
+
+#endif /* __ST7066U_DRIVER_FLAGS_H__ */
