@@ -18,7 +18,7 @@
 /*******************************************************************/
 ST7066U_status_t __attribute__((weak)) ST7066U_HW_init(void) {
     // Local variables.
-    ST7066U_status_t status = ST7066U_SUCCESS;
+    ST7066U_status_t status = ST7066U_ERROR_HW_FUNCTION_NOT_IMPLEMENTED;
     /* To be implemented */
     return status;
 }
@@ -26,7 +26,7 @@ ST7066U_status_t __attribute__((weak)) ST7066U_HW_init(void) {
 /*******************************************************************/
 ST7066U_status_t __attribute__((weak)) ST7066U_HW_de_init(void) {
     // Local variables.
-    ST7066U_status_t status = ST7066U_SUCCESS;
+    ST7066U_status_t status = ST7066U_ERROR_HW_FUNCTION_NOT_IMPLEMENTED;
     /* To be implemented */
     return status;
 }
@@ -34,7 +34,7 @@ ST7066U_status_t __attribute__((weak)) ST7066U_HW_de_init(void) {
 /*******************************************************************/
 ST7066U_status_t __attribute__((weak)) ST7066U_HW_gpio_write(ST7066_HW_gpio_t gpio, uint8_t state) {
     // Local variables.
-    ST7066U_status_t status = ST7066U_SUCCESS;
+    ST7066U_status_t status = ST7066U_ERROR_HW_FUNCTION_NOT_IMPLEMENTED;
     /* To be implemented */
     UNUSED(gpio);
     UNUSED(state);
@@ -44,7 +44,7 @@ ST7066U_status_t __attribute__((weak)) ST7066U_HW_gpio_write(ST7066_HW_gpio_t gp
 /*******************************************************************/
 ST7066U_status_t __attribute__((weak)) ST7066U_HW_gpio_make_pulse(ST7066_HW_gpio_t gpio, uint32_t pulse_duration_ns) {
     // Local variables.
-    ST7066U_status_t status = ST7066U_SUCCESS;
+    ST7066U_status_t status = ST7066U_ERROR_HW_FUNCTION_NOT_IMPLEMENTED;
     /* To be implemented */
     UNUSED(gpio);
     UNUSED(pulse_duration_ns);
@@ -54,7 +54,7 @@ ST7066U_status_t __attribute__((weak)) ST7066U_HW_gpio_make_pulse(ST7066_HW_gpio
 /*******************************************************************/
 ST7066U_status_t __attribute__((weak)) ST7066U_HW_data_bus_write(uint8_t data_bus_byte) {
     // Local variables.
-    ST7066U_status_t status = ST7066U_SUCCESS;
+    ST7066U_status_t status = ST7066U_ERROR_HW_FUNCTION_NOT_IMPLEMENTED;
     /* To be implemented */
     UNUSED(data_bus_byte);
     return status;
@@ -63,7 +63,7 @@ ST7066U_status_t __attribute__((weak)) ST7066U_HW_data_bus_write(uint8_t data_bu
 /*******************************************************************/
 ST7066U_status_t __attribute__((weak)) ST7066U_HW_delay_milliseconds(uint32_t delay_ms) {
     // Local variables.
-    ST7066U_status_t status = ST7066U_SUCCESS;
+    ST7066U_status_t status = ST7066U_ERROR_HW_FUNCTION_NOT_IMPLEMENTED;
     /* To be implemented */
     UNUSED(delay_ms);
     return status;
