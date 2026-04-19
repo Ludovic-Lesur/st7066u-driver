@@ -18,8 +18,12 @@
 
 /*** ST7066U HW structures ***/
 
+/*!******************************************************************
+ * \enum ST7066_HW_gpio_t
+ * \brief ST7066U GPIO list.
+ *******************************************************************/
 typedef enum {
-    ST7066U_HW_GPIO_RS,
+    ST7066U_HW_GPIO_RS = 0,
     ST7066U_HW_GPIO_RW,
     ST7066U_HW_GPIO_E,
     ST7066U_HW_GPIO_LAST
